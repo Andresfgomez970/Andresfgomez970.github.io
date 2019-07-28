@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <head>
+    <html>
+    <title>Test Page: Don't Panic</title>
+    <meta charset="utf-8">
+    <style media="screen">
+      a{
+        color: red;
+      }
+
+      div{
+        border: 1px solid black;
+      }
+      div a{
+        color: green;
+      }
+      /* this evaluation is done first than the other a!! */
+      li a{
+        color: blue;
+      }
+      li{
+        border: 1px solid black; 
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I'm an h1</h1>
+    <ul>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+    </ul>
+    <h2>I'm an h2</h2>
+    <div>
+      <a href="https://example.com/">I'm a link</a>
+    </div>
+    <div>
+      <a href="https://example.com/">I'm a link</a>
+    </div>
+    <div>
+      <a href="https://example.com/">I'm a link</a>
+    </div>
+    <div style="border: 1px solid black;">
+      <a href="https://example.com/"  >I'm a link</a>
+    </div>
+  </body>
+</html>
