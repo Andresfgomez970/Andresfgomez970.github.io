@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <head>
+    <html>
+    <title>Test Page: Don't Panic</title>
+    <meta charset="utf-8">
+    <style media="screen">
+
+      /* default color of page links */
+      a{
+        color: red;
+      }
+
+      /*target by id==ID; only one element would be affected */
+      #exec-bio{
+        background-color: lightgray;
+      }
+
+      /*target by class; all elements with such class are effected*/
+      .bio-box{
+        border: 1px solid black;
+      }
+
+      /*target by class; all elements with such class are effected*/
+      .bio-box-addition{
+        background-color: azure;
+      }
+
+
+      /*target by object inside class; all elements with such class are effected*/
+      .bio-box a{
+        color:green;
+      }
+
+      /*target by id==ID; only one element would be affected */
+      #random-orange-link{
+        background-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>I'm an h1</h1>
+    <ul>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+      <li>
+        <div id="random-orange-link">
+          <a href="https://example.com/">Link</a>
+        </div>
+      </li>
+    </ul>
+    <h2>I'm an h2</h2>
+    <div id="exec-bio" class="bio-box">
+      <a href="https://example.com/">I'm a link</a>
+    </div>
+    <div class="bio-box bio-box-addition">
+      <a href="https://example.com/">I'm a link</a>
+    </div>
+    <div class="bio-box">
+      <a href="https://example.com/">I'm a link</a>
+    </div>
+    <div class="bio-box">
+      <a href="https://example.com/"  >I'm a link</a>
+    </div>
+  </body>
+</html>
