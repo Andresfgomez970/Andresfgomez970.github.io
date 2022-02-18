@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(206, 244, 255);
+}
+
+h1{
+    text-align: center;
+}
+
+h2.main{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.names{
+    display: flex;
+    align-items: center;
+}
+
+.names h3{
+    margin: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.names img{
+    margin: 40px;
+    width: 200px;
+    flex: 1;
+    border-radius: 50%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.description-title{
+    display: flex;    
+}
+
+.description-title h2{
+    flex: 1;
+    text-align: center;
+}
+
+
+.description{
+    display: flex;    
+}
+
+.description p, ul{
+    flex: 1;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.description ul li{
+    list-style: none;
+}
