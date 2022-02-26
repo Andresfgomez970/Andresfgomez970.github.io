@@ -1,3 +1,99 @@
-.up-logo {
-   width: 300px;
+.header{
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   padding: 20px 200px;
+   gap: 20px;
+}
+
+.header a{
+   font-size: 16px;
+   text-decoration: none;
+   color: #2f4a66;
+}
+
+.header .right{
+   margin-left: auto;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+}
+
+.content{
+   background-color: #2f4a66;
+   margin: 0;
+   display: flex;   
+   align-items: flex-start;
+   justify-content: space-around;
+   padding: 50px 200px;
+   gap: 50px;
+}
+
+.content .left{
+   display: flex;
+   flex-direction: column;
+   color: white;
+   justify-content: space-around;
+   flex: 1;
+   align-self: stretch;
+}
+
+.content .contact-us{
+   margin-top: auto;
+}
+
+.content .contact-us input{
+   font-size: 15px;
+}
+
+.content .left h1{
+   padding: 0;
+   margin: 0 0 40px 0;
+   font-size: 40px;
+   font-weight: 900;
+}
+
+.content .left h2{
+   padding: 0;
+   margin: 0;
+   font-size: 30px;
+   font-weight: 900;
+}
+
+.content input{
+   padding: 5px;
+   margin-right: 10px;
+   margin-bottom: 30px;
+   background: transparent;
+   border: none;
+   color: white;
+   border-bottom: 1px solid #eee;
+   max-width: 150px;
+}
+
+.content button{
+   padding: 5px 5px;
+   margin-top: 20px;
+   border-radius: 5px; 
+   border: none;
+   background: #26a9e0; 
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: 400;
+   color: #fff;
+}
+
+
+.content img{   
+   flex: 1;
+   max-width: 600px;
+}
+
+.content p{
+   flex: 1;
+   padding: 10px 0;
+   font-size: 20px;
 }
