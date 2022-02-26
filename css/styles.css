@@ -17,6 +17,10 @@
    margin-left: auto;
 }
 
+.header .small-logo{
+   max-width: 150px;
+}
+
 body{
    margin: 0;
    padding: 0;
@@ -72,7 +76,7 @@ body{
    border: none;
    color: white;
    border-bottom: 1px solid #eee;
-   max-width: 150px;
+   max-width: 100px;
 }
 
 .content button{
@@ -86,7 +90,6 @@ body{
    font-weight: 400;
    color: #fff;
 }
-
 
 .content img{   
    flex: 1;
