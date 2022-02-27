@@ -183,7 +183,26 @@ body{
 }
 
 .footer{
+   margin-top: 60px;
    background-color: lightgray;
-   justify-content: flex-end;
    height: 50px;
+}
+
+.footer-info{
+   display: flex;
+   align-items: baseline;
+   gap: 20px;
+}
+
+
+.footer a{
+   font-size: 16px;
+   text-decoration: none;
+   color: #2f4a66;
+}
+
+
+.fa-map-marker-alt{
+   font-size:20px;
+   color:#2f4a66;
 }
