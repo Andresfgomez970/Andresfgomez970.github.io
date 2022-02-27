@@ -125,6 +125,10 @@ body{
    text-align: center;
 }
 
+.service .text{
+   font-size: 20px;
+}
+
 .reasons h1{
    margin-bottom: 25px;
    text-align: left;
