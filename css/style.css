@@ -1,0 +1,257 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+
+body.active-modal {
+  overflow: hidden; }
+
+body.active-modal div.main-page {
+  transition: 0.2s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px); }
+
+.header, .footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 20px 200px;
+  gap: 20px; }
+
+.header a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2f4a66; }
+
+.header span {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2f4a66;
+  cursor: pointer; }
+
+.header .right {
+  margin-left: auto; }
+
+.header .small-logo {
+  max-width: 150px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.content {
+  background-color: #2f4a66;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 50px 200px;
+  gap: 50px; }
+
+.content .left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+  flex: 1;
+  align-self: stretch; }
+
+.content .contact-us {
+  margin-top: auto; }
+
+.content .contact-us input {
+  font-size: 15px; }
+
+.content .left h1 {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-size: 40px;
+  font-weight: 900; }
+
+.content .left h2 {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 900; }
+
+.content input {
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  border-bottom: 1px solid #eee;
+  max-width: 100px; }
+
+.content button {
+  padding: 5px 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background: #26a9e0;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff; }
+
+.content img {
+  flex: 1;
+  max-width: 500px;
+  align-self: center; }
+
+.content p {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 20px; }
+
+.reasons {
+  padding: 50px 200px; }
+
+.services h1, .reasons h1 {
+  padding: 0;
+  margin: 50px 0;
+  font-size: 40px;
+  font-weight: 900; }
+
+.services h1 {
+  text-align: center; }
+
+.service .text {
+  font-size: 20px; }
+
+.reasons h1 {
+  margin-bottom: 25px;
+  text-align: left; }
+
+.reasons p {
+  margin-bottom: 50px;
+  font-size: 25px; }
+
+.reasons .notes {
+  margin-bottom: 20px;
+  font-size: 15px; }
+
+.reasons-explained {
+  display: flex;
+  justify-content: space-around; }
+
+.reasons-explained h2 {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 900; }
+
+.reason {
+  min-width: 400px; }
+
+.reason ul {
+  list-style-type: circle;
+  margin: 20px;
+  padding: 0;
+  font-size: 20px; }
+
+.reason ul li {
+  margin-bottom: 20px; }
+
+.properties-described {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px 100px;
+  text-align: center;
+  flex-wrap: wrap; }
+
+.services-described {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px 300px;
+  text-align: center;
+  flex-wrap: wrap; }
+
+.services .services-described img {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 6px solid #2f4a66;
+  border-radius: 50%;
+  margin-bottom: 30px; }
+
+.services-described .service {
+  max-width: 400px; }
+
+.footer {
+  margin-top: 60px;
+  background-color: lightgray;
+  height: 50px; }
+
+.footer-info {
+  display: flex;
+  align-items: baseline;
+  gap: 20px; }
+
+.footer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2f4a66; }
+
+.fa-map-marker-alt {
+  font-size: 20px;
+  color: #2f4a66; }
+
+.spanish {
+  display: "none"; }
+
+.language-box {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  visibility: hidden; }
+  .language-box .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #000;
+    opacity: 0;
+    transition: opacity 1.3s; }
+
+.body-modal {
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden; }
+  .body-modal .inner-body-modal {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.43);
+    min-width: 500px;
+    max-width: 1000px; }
+
+.inner-body-modal {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.modal-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  transition: all 0.9s; }
+  .modal-show .overlay {
+    opacity: 0.5;
+    transition: opacity 1.3s; }
+  .modal-show .body-modal {
+    min-width: 500px;
+    max-height: 1000px;
+    opacity: 1;
+    transition: 0.3s max-height 0.8s, 0.3s opacity 0.6s; }
+
+/*# sourceMappingURL=style.css.map */
