@@ -221,6 +221,25 @@ body {
     }
  }
 
+ .support-box {
+  position:fixed;
+  width:100%;
+  height:100vh;
+  left:0px;
+  top:0px;
+  visibility:hidden;
+  .overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    background:#000;
+    opacity:0;
+    transition:opacity 1.3s;
+  }
+ }
+
  .body-modal {
     max-height:0px;
     opacity:0;
