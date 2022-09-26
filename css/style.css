@@ -210,15 +210,16 @@ body {
   left: 0px;
   top: 0px;
   visibility: hidden; }
-  .language-box .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: #000;
-    opacity: 0;
-    transition: opacity 1.3s; }
+
+.language-box .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  opacity: 0;
+  transition: opacity 1.3s; }
 
 .support-box {
   position: fixed;
@@ -227,29 +228,31 @@ body {
   left: 0px;
   top: 0px;
   visibility: hidden; }
-  .support-box .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: #000;
-    opacity: 0;
-    transition: opacity 1.3s; }
+
+.support-box .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  opacity: 0;
+  transition: opacity 1.3s; }
 
 .body-modal {
   max-height: 0px;
   opacity: 0;
   overflow: hidden; }
-  .body-modal .inner-body-modal {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.43);
-    min-width: 500px;
-    max-width: 1000px; }
+
+.body-modal .inner-body-modal {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.43);
+  min-width: 500px;
+  max-width: 1000px; }
 
 .inner-body-modal {
   display: flex;
@@ -262,14 +265,16 @@ body {
   justify-content: center;
   visibility: visible;
   transition: all 0.9s; }
-  .modal-show .overlay {
-    opacity: 0.5;
-    transition: opacity 1.3s; }
-  .modal-show .body-modal {
-    min-width: 500px;
-    max-height: 1000px;
-    opacity: 1;
-    transition: 0.3s max-height 0.8s, 0.3s opacity 0.6s; }
+
+.modal-show .overlay {
+  opacity: 0.5;
+  transition: opacity 1.3s; }
+
+.modal-show .body-modal {
+  min-width: 500px;
+  max-height: 1000px;
+  opacity: 1;
+  transition: 0.3s max-height 0.8s, 0.3s opacity 0.6s; }
 
 .ftco-section {
   padding: 7em 0; }
@@ -375,8 +380,15 @@ body {
 .top-image {
   padding: 0 1rem; }
 
+.block-single_image {
+  max-width: calc(100% - 0.1px); }
+
+.us-image {
+  max-width: 50%; }
+
 .d-flex {
-  display: flex !important; }
+  display: flex !important;
+  margin: 2rem 0rem; }
 
 .hero-secondary .hero-secondary-container {
   max-width: 960px; }
@@ -403,5 +415,64 @@ body {
   width: 100%;
   padding-right: 8px;
   padding-left: 8px; }
+
+.col-md-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%; }
+
+.align-items-center {
+  align-items: center !important; }
+
+.row {
+  flex-wrap: wrap; }
+
+.col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+  position: relative;
+  width: 100%; }
+
+.d-block {
+  display: block !important; }
+
+.w-100 {
+  width: 100% !important; }
+
+.align-items-center {
+  align-items: center !important;
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+.us-image {
+  justify-self: center;
+  align-self: center; }
+
+.us-image img {
+  max-width: 65%; }
+
+.how-started {
+  display: flex; }
+
+.us-text {
+  margin-right: 50px;
+}
+
+.block-three-images{
+  display: flex;
+  flex-direction: column;
+}
+
+.block-two-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.block-two-images .single-image{
+  display: flex;
+  max-width: 46%;
+}
+
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
