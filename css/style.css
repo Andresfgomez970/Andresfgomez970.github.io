@@ -19,7 +19,7 @@ body.active-modal div.main-page {
   padding: 20px 200px;
   gap: 20px; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .header {
     justify-content: space-between;
     flex-direction: column;
@@ -34,7 +34,7 @@ body.active-modal div.main-page {
     position: absolute;
     right: 20px;
     top: 30px; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .header.responsive {
     position: relative; }
 
@@ -154,16 +154,19 @@ body {
   font-size: 20px; }
 
 @media screen and (max-width: 900px) {
-  .content{ 
+  .content {
     flex-direction: column;
-    padding: 50px 150px;
-  }
-  .content img{
-    width: 100%;
-  }
+    padding: 3rem 8rem; }
 
-}
+  .content img {
+    width: 100%; } }
+@media screen and (max-width: 700px) {
+  .content {
+    flex-direction: column;
+    padding: 1rem 2rem; }
 
+  .content img {
+    width: 0%; } }
 .reasons {
   padding: 50px 200px; }
 
