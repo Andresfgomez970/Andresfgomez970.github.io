@@ -106,3 +106,13 @@ $('.overlay').on('click', function(){
 	contactForm();
 
 })(jQuery);
+
+function responsiveIcon(){
+	var x = document.getElementById("pageTopnav");
+	if (x.className === "header") {
+	  x.className += " responsive";
+	} else {
+	  x.className = "header";
+	}
+}
+  

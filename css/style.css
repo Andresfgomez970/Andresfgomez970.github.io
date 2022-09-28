@@ -19,6 +19,53 @@ body.active-modal div.main-page {
   padding: 20px 200px;
   gap: 20px; }
 
+@media screen and (max-width: 900px) {
+  .header {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0px; }
+
+  .header a:not(:first-child) {
+    display: none; }
+
+  .header a.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px; } }
+@media screen and (max-width: 900px) {
+  .header.responsive {
+    position: relative; }
+
+  .header.responsive .icon {
+    position: absolute; }
+
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left; }
+
+  #support {
+    position: absolute;
+    right: 55px;
+    top: 35px;
+    font-size: 0; }
+
+  #support .fa-circle-info {
+    font-size: 16px; }
+
+  #language {
+    position: absolute;
+    right: 90px;
+    top: 35px;
+    font-size: 0; }
+
+  #language .fa-globe {
+    font-size: 16px; } }
+.header .icon {
+  display: none; }
+
 .header a {
   font-size: 16px;
   text-decoration: none;
@@ -105,6 +152,17 @@ body {
   flex: 1;
   padding: 10px 0;
   font-size: 20px; }
+
+@media screen and (max-width: 900px) {
+  .content{ 
+    flex-direction: column;
+    padding: 50px 150px;
+  }
+  .content img{
+    width: 100%;
+  }
+
+}
 
 .reasons {
   padding: 50px 200px; }
@@ -439,8 +497,7 @@ body {
 .align-items-center {
   align-items: center !important;
   display: flex;
-  justify-content: space-evenly; 
-}
+  justify-content: space-evenly; }
 
 .us-image {
   justify-self: center;
@@ -451,27 +508,6 @@ body {
 
 .how-started {
   display: flex; }
-
-.us-text {
-  margin-right: 50px;
-}
-
-.block-three-images{
-  display: flex;
-  flex-direction: column;
-}
-
-.block-two-images{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.block-two-images .single-image{
-  display: flex;
-  max-width: 46%;
-}
-
 
 /*# sourceMappingURL=style.css.map */
 
