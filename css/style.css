@@ -183,7 +183,7 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-  .content, .reasons{
+  .content{
     flex-direction: column;
     padding: 3rem 8rem; 
   }
@@ -296,18 +296,51 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
-  .reasons-explained{
-    flex-direction: column;
-    padding: 3rem 8rem; }
-
-  .reason{
-    width: calc((100% - 16rem - 5px) / 2); 
+  .reasons{
+    padding: 3rem 3rem;
   }
 
-  .content img {
-    width: 100%; } 
+  .reasons-explained{
+    flex-wrap: wrap;
+    padding: 3rem 3rem; }
+
+  .reason{
+    width: calc((100% - 3rem - 10px) / 2); 
+  }
 }
-  
+ 
+@media screen and (max-width: 600px) {
+  .reasons{
+    padding: 3rem 2rem;
+  }
+
+  .reasons h1 {
+    font-size: clamp(20px, 10vw, 40px);
+  }
+
+  .reasons p {
+    font-size: clamp(12.5px, 6.2vw, 25px);
+  }
+
+
+  .reasons-explained{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 2rem; 
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .reasons-explained ul{
+    list-style-type: none;
+    text-align:unset
+  }
+
+  .reason{
+    width: calc(100% - 2rem); 
+  }
+}
+
 
 
 .properties-described {
