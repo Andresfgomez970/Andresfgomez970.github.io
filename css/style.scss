@@ -1,8 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  flex: 1;
-}
+  flex: 1; }
 
 body.active-modal {
   overflow: hidden; }
@@ -17,10 +16,10 @@ body.active-modal div.main-page {
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-around;
-  padding: 20px 200px;
+  padding: 20px 7.8%;
   gap: 20px; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .header {
     justify-content: space-between;
     flex-direction: column;
@@ -34,8 +33,7 @@ body.active-modal div.main-page {
     display: block;
     position: absolute;
     right: 20px;
-    top: 30px; } }
-@media screen and (max-width: 1200px) {
+    top: 30px; } 
   .header.responsive {
     position: relative; }
 
@@ -63,7 +61,20 @@ body.active-modal div.main-page {
     font-size: 0; }
 
   #language .fa-globe {
-    font-size: 16px; } }
+    font-size: 16px; }  
+  }
+
+@media screen and (max-width: 400px) {
+  .header .right{
+    margin-left: 0px;
+  }
+  .header:first-child{
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+}
+
+
 .header .icon {
   display: none; }
 
@@ -94,7 +105,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  padding: 50px 200px;
+  padding: 50px 7.8%;
   gap: 50px; }
 
 .content .left {
@@ -144,38 +155,94 @@ body {
   font-weight: 400;
   color: #fff; }
 
+.content .single-image {
+  align-self: center;
+  justify-self: center;
+}
+
+.content .single-image{
+  max-width: 45%;
+}
+
 .content img {
   flex: 1;
-  max-width: 500px;
-  align-self: center; }
+  width: 85%;
+}
 
 .content p {
   flex: 1;
   padding: 10px 0;
   font-size: 20px; }
 
-@media screen and (max-width: 900px) {
-  .content{ 
+.reasons {
+  padding: 50px 7.8%; 
+}
+
+.single-image-inside-form{
+  width: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  .content{
     flex-direction: column;
-    padding: 3rem 8rem;
+    padding: 3rem 8rem; 
   }
-  .content img{
-    width: 100%;
+
+  .content .single-image{
+    width: 0%;
+  }
+    
+  .content:nth-last-child(2){
+    padding-bottom: 0px;
+  }
+
+  .content .left{
+    gap: 25px;
+  }
+  
+  .contact-us{
+    display: flex;
+    gap: 40px;
+  }
+
+  .contact-us form {
+    align-self: center;
+    width: 40%;
+  }
+
+
+  .single-image-inside-form{
+    align-self: center;
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .content{ 
+  .content {
     flex-direction: column;
-    padding: 1rem 2rem;
-  }
-  .content img{
+    padding: 1rem 2rem !important; }
+
+  .single-image-inside-form{
     width: 0%;
+    display: none;
+  } 
+  
+  .contact-us form{
+    align-self: center;
+    width: 100%;
+  } 
+
+  .content .single-image{
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 100vw;
+  }
+
+  .content .single-image img{
+    width: calc(100vw - 4rem);
   }
 }
 
-.reasons {
-  padding: 50px 200px; }
 
 .services h1, .reasons h1 {
   padding: 0;
@@ -203,25 +270,78 @@ body {
 
 .reasons-explained {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around; 
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
 .reasons-explained h2 {
   padding: 0;
-  margin: 0 0 20px;
-  font-size: 30px;
+  margin: 0 0;
+  font-size: 140%;
   font-weight: 900; }
 
 .reason {
-  min-width: 400px; }
+  width: calc((92.2% - 30px) / 4); 
+}
 
 .reason ul {
   list-style-type: circle;
   margin: 20px;
   padding: 0;
-  font-size: 20px; }
+  font-size: 110%; }
 
 .reason ul li {
-  margin-bottom: 20px; }
+  margin-bottom: 20px; 
+}
+
+@media screen and (max-width: 1023px) {
+  .reasons{
+    padding: 3rem 3rem;
+  }
+
+  .reasons-explained{
+    flex-wrap: wrap;
+    padding: 3rem 3rem; }
+
+  .reason{
+    width: calc((100% - 3rem - 10px) / 2); 
+  }
+}
+ 
+@media screen and (max-width: 600px) {
+  .reasons{
+    padding: 3rem 2rem;
+  }
+
+  .reasons h1 {
+    font-size: clamp(20px, 10vw, 40px);
+  }
+
+  .reasons p {
+    font-size: clamp(12.5px, 6.2vw, 25px);
+  }
+
+
+  .reasons-explained{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 2rem; 
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .reasons-explained ul{
+    list-style-type: none;
+    text-align:unset
+  }
+
+  .reason{
+    width: calc(100% - 2rem); 
+  }
+}
+
+
 
 .properties-described {
   padding: 50px;
