@@ -340,8 +340,6 @@ body {
   }
 }
 
-
-
 .properties-described {
   padding: 50px;
   display: flex;
@@ -358,6 +356,10 @@ body {
   text-align: center;
   flex-wrap: wrap; }
 
+.services-described .service{
+  min-width: 265px;
+}
+
 .services .services-described img {
   max-width: 250px;
   border-radius: 50%;
@@ -371,7 +373,7 @@ body {
 .footer {
   margin-top: 60px;
   background-color: lightgray;
-  height: 50px; }
+}
 
 .footer-info {
   display: flex;
