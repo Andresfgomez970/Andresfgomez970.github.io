@@ -431,7 +431,8 @@ body {
 .body-modal {
   max-height: 0px;
   opacity: 0;
-  overflow: hidden; }
+  overflow: auto; 
+}
 
 .body-modal .inner-body-modal {
   background: #fff;
@@ -440,13 +441,20 @@ body {
   position: relative;
   z-index: 1;
   box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.43);
-  min-width: 500px;
+  min-width: 300px;
   max-width: 1000px; }
 
 .inner-body-modal {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap; 
+}
+
+@media screen and (max-width: 800px){
+  .no-gutters {
+    justify-content: center;
+  }
+}
 
 .modal-show {
   display: flex;
@@ -460,7 +468,7 @@ body {
   transition: opacity 1.3s; }
 
 .modal-show .body-modal {
-  min-width: 500px;
+  min-width: 300px;
   max-height: 1000px;
   opacity: 1;
   transition: 0.3s max-height 0.8s, 0.3s opacity 0.6s; }
@@ -470,7 +478,8 @@ body {
 
 .contact-us-popup {
   background-color: #2f4a66;
-  color: #fff; }
+  color: #fff; 
+}
 
 .container {
   width: 100%;
@@ -641,3 +650,4 @@ body {
   display: flex; }
 
 /*# sourceMappingURL=style.css.map */
+

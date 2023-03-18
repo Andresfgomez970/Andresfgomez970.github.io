@@ -21,6 +21,18 @@ $('.overlay').on('click', function(){
   $('.support-box').removeClass('modal-show');
 })
 
+
+$('#pay').on('click', function(){
+	$('body').addClass('active-modal');
+	$('.pay-box').addClass('modal-show');
+  });
+  
+  $('.overlay').on('click', function(){
+	$('body').removeClass('active-modal');
+	$('.pay-box').removeClass('modal-show');
+  })
+  
+
 (function($) {
 
 	"use strict";
@@ -116,3 +128,16 @@ function responsiveIcon(){
 	}
 }
   
+// (function () {
+//     const resize = () => {
+//         let rooms = document.getElementsByClassName('room');
+
+//         for (let room of rooms) {
+//             let scale = (window.innerWidth - 15) / room.offsetWidth;
+//             room.style.transform = 'scale(' + scale + ')';
+//         }
+//     }
+
+//     window.onload = () => resize();
+//     window.onresize = () => resize();
+// })();
