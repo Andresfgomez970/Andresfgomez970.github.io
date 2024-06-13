@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+}
+
+body .title{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+body .options{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    gap: 40px;
+}
+
+.options button{
+    font-size: 30px;
+    height: 100px;
+    width: 200px;
+}
+
+.result h2{
+    display: flex;
+    justify-content: center;
+}
+
+.scores{
+    display: flex;
+    justify-content: space-around;
+}
+
+.scores .user-score, .computer-score{
+    text-align: center;
+}
